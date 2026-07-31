@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="96" fill="#1A1A1A"/>
+  <!-- Outer Gold Border -->
+  <rect x="24" y="24" width="464" height="464" rx="72" fill="none" stroke="#C5A880" stroke-width="12" stroke-opacity="0.4"/>
+  <!-- CAD Grid Accent -->
+  <path d="M 128 64 V 448 M 256 64 V 448 M 384 64 V 448 M 64 128 H 448 M 64 256 H 448 M 64 384 H 448" stroke="#C5A880" stroke-width="2" stroke-opacity="0.15" stroke-dasharray="8 8"/>
+  <!-- Drafting Compass Icon -->
+  <path d="M 256 112 L 140 380 M 256 112 L 372 380 M 172 300 H 340" stroke="#C5A880" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Center Pivot Circle -->
+  <circle cx="256" cy="112" r="28" fill="#1A1A1A" stroke="#C5A880" stroke-width="12"/>
+  <circle cx="256" cy="112" r="10" fill="#C5A880"/>
+  <!-- Monogram CFT Badge -->
+  <rect x="186" y="390" width="140" height="44" rx="8" fill="#C5A880"/>
+  <text x="256" y="421" font-family="'Syne', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="24" fill="#1A1A1A" text-anchor="middle" letter-spacing="3">CFT</text>
+</svg>
