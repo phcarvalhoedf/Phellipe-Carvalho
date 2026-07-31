@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    @apply bg-[#F5F2ED] text-[#1A1A1A] antialiased selection:bg-[#C5A880] selection:text-white;
+    padding-bottom: env(safe-area-inset-bottom);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', 'Plus Jakarta Sans', system-ui, sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .glass {
+    @apply bg-white/40 backdrop-blur-md border border-white/40 shadow-[0_8px_32px_0_rgba(197,168,128,0.08)];
+  }
+
+  .glass-dark {
+    @apply bg-[#1A1A1A]/85 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-md border border-[#1A1A1A]/10 hover:border-[#C5A880] transition-all duration-300;
+  }
+}
+
+.bg-architectural-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(197, 168, 128, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 168, 128, 0.08) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(#C5A880 0.75px, transparent 0.75px);
+  background-size: 32px 32px;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1A1A1A;
+}
+
